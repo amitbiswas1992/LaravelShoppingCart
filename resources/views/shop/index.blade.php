@@ -13,24 +13,22 @@ Shopping Cart
 	<div class="clo-sm-6 col-md-4">
     <div class="card" style="width: 20rem;">
         <img class="card-img-top" src="{{$product->imagePath}}" alt="Card image cap">
-        <div class="card-block">
+           <div class="card-block">
             <h4 class="card-title">{{$product->title}}</h4>
                <p class="card-text">{{$product->description}}</p>
-    <div class="pull-left price">${{$product->price}}</div> 
-    <a href="#" class="btn btn-outline-primary pull-right" role="button">Buy</a></p>
-           </div>
-       </div>
-  
+                 <div class="pull-left price">${{$product->price}}</div> 
+             <a href="#" class="btn btn-outline-primary pull-right" role="button">Add to Cart</a>
+          </div>
+        </div>
+    </div>
 
-     </div>
+    @endforeach
 
-   @endforeach
-
-    
+  @endforeach
 
 
 
-@endforeach
 
 @endsection
+
 

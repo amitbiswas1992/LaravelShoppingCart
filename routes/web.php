@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', 'ProductsController@getIndex');
+Route::get('/', 'ProductsController@getIndex')->name('home');
 
-Route::get('/shop',function(){
-return view ('shop/shop');
 
-});
+
+Route::get('/signup','UserController@create');
+
+Route::post('/signup','UserController@store');
